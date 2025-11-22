@@ -25,12 +25,13 @@ The Banker's Algorithm is a deadlock avoidance algorithm that ensures safe alloc
 
 ## Is the system in a safe state?
 
-Answer is 'Yes' for the given safe_input.txt system state:
-- Total Resource Instances: A = 10, B = 5, C = 7
-- Available: A = 3, B = 3, C = 2
-- The algorithm finds a safe sequence where all processes can complete without deadlock
-- The safe sequence: P1 → P3 → P0 → P2 → P4
+The answer is 'Yes' for the given safe_input.txt snapshot of the system at time t0 :
 
-### Example Output Screenshot:
-safe_state_screenshot
-sequence_screenshot
+- Total Resource Instances: A = 10, B = 5, C = 7
+- Available: A = 3, B = 2, C = 2
+- The algorithm finds a safe sequence where all processes can complete without deadlock
+
+- The safe sequence: P3 → P1 → P0 → P2 → P4
+
+### Sample Outputs Screenshot file:
+Sample Outputs/sample_outputs.png
